@@ -1,47 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App | Project by Srishti Aggarwal</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1116/1116453.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #0f0f0f;
+      color: #fff;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-image {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+      transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .project-image:hover {
+      transform: scale(1.03);
+      filter: brightness(1.1);
+      cursor: pointer;
+    }
+
+    .description {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .badges {
+      margin: 1rem 0;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: #f0c14b;
+      color: #111;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin-right: 10px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .badge:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(240, 193, 75, 0.3);
+      cursor: pointer;
+    }
+
+    .links {
+      display: flex;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .links a {
+      padding: 0.7rem 1.5rem;
+      background-color: #f0c14b;
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: transform 0.3s ease, background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .links a:hover {
+      background-color: #f3a847;
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(240, 193, 75, 0.3);
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #444;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      .title {
+        font-size: 2rem;
+      }
+      .links {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">Weather App</h2>
-            <div class="serv-content">
-                
-                <div class="card">
-                    <div class="box">
-                        <div class="tooltip">
-                            <a href="https://github.com/srishtiaggarwal17/Weather-App/tree/main/weather%20app/Weather-App" target="_blank">
-                                <img class="linking" src="./Images/github-logo.svg" />
-                            </a>
-                            <span class="tooltiptext">Source Code</span>
-                        </div>
-                        <div class="tooltip">
-                            <img class="linking" src="./Images/linking.png" />
-                            <span class="tooltiptext">No Demo</span>
-                        </div>
-                        <img class="mywork" src="Images/weather.png">
-                        <div class="text">Weather App</div>
-                        <span class="badge background-css">HTML</span>
-                        <span class="badge background-css">CSS</span>
-                        <span class="badge background-css">JavaScript</span>
-                        <div class="workstext"><span class="workstext2">This Weather App fetches real-time weather data, displaying forecasts with a responsive UI.</span></div>
+  <div class="container">
+    <h1 class="title">Weather App</h1>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </section>
-    <footer>
-        <p>&copy; 2025 Srishti Aggarwal</p>
-    </footer>
+    <img src="./Images/weather.png" alt="Weather App Preview" class="project-image" />
+
+    <div class="description">
+      This Weather App uses real-time API integration to fetch weather conditions of any searched city. It presents data such as temperature, humidity, and weather description in a user-friendly and visually clean UI. Built using HTML, CSS, and vanilla JavaScript, the app is fully responsive and easy to use.
+    </div>
+
+    <div class="badges">
+      <span class="badge">HTML</span>
+      <span class="badge">CSS</span>
+      <span class="badge">JavaScript</span>
+    </div>
+
+    <div class="links">
+      <a href="https://github.com/srishtiaggarwal17/Weather-App/tree/main/weather%20app/Weather-App" target="_blank">Source Code</a>
+      <a href="#" onclick="alert('Live demo not available for this project')">No Live Demo</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Srishti Aggarwal | Portfolio Project
+  </footer>
 </body>
-
 </html>
