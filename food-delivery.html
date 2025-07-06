@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Food Delivery Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #0f0f0f;
+      color: white;
+      padding: 2rem;
+    }
+
+    .project-container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .project-title {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .project-image {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .project-image:hover {
+      transform: scale(1.03);
+      filter: brightness(1.1);
+      cursor: pointer;
+    }
+
+    .project-description {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .project-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .detail-box {
+      background: #1c1c1c;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      flex: 1 1 250px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .detail-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(165, 42, 42, 0.2);
+      cursor: pointer;
+    }
+
+    .detail-box h3 {
+      margin-bottom: 0.5rem;
+      color: #800000;
+    }
+
+    .detail-box ul {
+      padding-left: 1rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .links a {
+      padding: 0.7rem 1.5rem;
+      background-color: #800000;
+      color: black;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: transform 0.3s ease, background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .links a:hover {
+      background-color: #a52a2a;
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(165, 42, 42, 0.3);
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .project-title {
+        font-size: 2rem;
+      }
+      .project-details {
+        flex-direction: column;
+      }
+      .links {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="project-container">
+    <h1 class="project-title">Food Delivery Website</h1>
+
+    <img src="./Images/food-delivery.png" alt="Food Delivery Preview" class="project-image">
+
+    <div class="project-description">
+      A modern, responsive food ordering website inspired by Swiggy. Built using React, it features live restaurant listings, infinite scroll, search/filter, cart functionality, error boundary handling, shimmer loading UI, and light/dark theme toggle. Redux is used for global state management. Data is fetched from a Swiggy-like mock API, and the project is optimized for performance using Vite.
+    </div>
+
+    <div class="project-details">
+      <div class="detail-box">
+        <h3>Tech Stack</h3>
+        <ul>
+          <li>React.js</li>
+          <li>Redux Toolkit</li>
+          <li>Tailwind CSS</li>
+          <li>Vite</li>
+        </ul>
+      </div>
+      <div class="detail-box">
+        <h3>Features</h3>
+        <ul>
+          <li>Real-time restaurant listings</li>
+          <li>Cart & Checkout functionality</li>
+          <li>Search & Filters with infinite scroll</li>
+          <li>Light/Dark mode toggle</li>
+          <li>Error handling & shimmer loading UI</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="links">
+      <a href="https://github.com/srishtiaggarwal17/FoodOrderingWebsite" target="_blank">Source Code</a>
+      <a href="#" onclick="alert('Live demo not available for this project')">No Live Demo</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Srishti Aggarwal | Portfolio Project
+  </footer>
+</body>
+</html>
