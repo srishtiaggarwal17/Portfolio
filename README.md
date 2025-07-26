@@ -35,3 +35,5 @@ This project utilizes a variety of web development skills and technologies to cr
 
 10. **Shadow and Hover Effects**:
     - Box shadows and hover effects are used to create a sense of depth and interactivity, making the design more dynamic and engaging.
+
+These skills combined create a polished, professional-looking website that is both functional and aesthetically pleasing, providing a good user experience across various devices and screen sizes.
