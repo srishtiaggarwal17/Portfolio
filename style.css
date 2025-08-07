@@ -615,7 +615,7 @@ footer a {
   transform: scale(1.1);
 }
 
-.social-footer::before,
+/* .social-footer::before,
 .projects::before,
 .contact::before {
     content: '';
@@ -636,3 +636,4 @@ footer a {
     position: relative;
     z-index: 1;
 }
+ */
